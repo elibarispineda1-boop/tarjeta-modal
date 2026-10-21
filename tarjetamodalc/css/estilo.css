@@ -1,0 +1,52 @@
+body{
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.tarjeta{
+    border: 2px solid #333;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+#cont_padre {
+    position: relative;
+    width: 284px; /* Ancho de la tarjeta (250px) + padding (15px*2) + borde (2px*2) */
+}
+
+/* MODIFICADO: Posicionamiento absoluto respecto al padre */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: absolute;
+    margin: 0;
+    /* CONTROL DE POSICIÓN: Modifica estos valores a tu gusto */
+    top: 60px; /* <--- Mayor número lo baja más respecto al borde superior */
+    left: 15px; /* <--- Alineado con el contenido interno de la tarjeta */
+    width: 210px; /* <--- Opcional: limita el ancho para que no desborde la tarjeta */
+}
+
+/* Estilo para fondo oscurecido */
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(3px); /* agrega un efecto difuminado */
+}
+
+/*
+dialog{
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+} 
+*/

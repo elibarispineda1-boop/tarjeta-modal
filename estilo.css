@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.tarjeta{
+    border: 2px solid #333;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+#cont_padre {
+    position: relative;
+    width: 284px; 
+}
+
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: absolute;
+    margin: 0;
+    
+    top: 60px; 
+    left: 15px; 
+    width: 210px; 
+}
+
+
+dialog::backdrop {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(3px); 
+}
+
+dialog{
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+} 
+*/
